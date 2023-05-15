@@ -3,9 +3,9 @@
 starts a Flask web application
 """
 
-from flask import Flask
-app = Flask(__name__)
+from your_flask_app import create_app
 
+app = create_app()
 
 @app.route('/', strict_slashes=False)
 def index():
